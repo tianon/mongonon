@@ -22,7 +22,8 @@ local $" = '';
 	return { '$function' => $self->{code} };
 };
 
-# this TO_JSON function would work great, if the MongoDB class even returned the boolean types it accepts
+# this TO_JSON function will work excellent if my patch is integrated into MongoDB
+# see https://rt.cpan.org/Public/Bug/Display.html?id=60161
 *boolean::TO_JSON = sub {
 	my $self = shift;
 	
