@@ -29,8 +29,8 @@ local $" = '';
 	
 	return (
 		$self
-		? JSON::true
-		: JSON::false
+		? \'1'
+		: \'0'
 	);
 };
 
