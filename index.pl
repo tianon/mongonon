@@ -3,8 +3,6 @@
 use strict;
 use warnings;
 
-use open qw(:utf8 :std);
-
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 
